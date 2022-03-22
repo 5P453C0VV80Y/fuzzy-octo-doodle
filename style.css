@@ -118,7 +118,7 @@ body {
 
 section {
   display: flex;
-  padding: 50px;
+  padding-top: 80px;
   position: relative;
 }
 .about {
