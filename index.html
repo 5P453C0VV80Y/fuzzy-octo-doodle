@@ -1,57 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> sadasd</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"
+    />
+    <title>sadasd</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
+
   <body>
     <header class="navBar scrolled">
       <ul>
-        <li> <a href="#aboutAnchor" class="shortCut"> Обо мне </a></li>
-        <li> <a href="#sessionsAnchor" class="shortCut"> Фотосессии </a></li>
-        <li> <a href="#galleryAnchor" class="shortCut"> Галерея </a></li>
-        <li> <a href="#conditionsAnchor" class="shortCut"> Условия работы </a></li>
-        <li> <a href="#contactsAnchor" class="shortCut"> Контакты </a></li>
-        <li> <a href="#reviewsAnchor" class="shortCut"> Отзывы </a></li>
+        <li><a href="#aboutAnchor" class="shortCut"> Обо мне </a></li>
+        <li><a href="#galleryAnchor" class="shortCut"> Галерея </a></li>
+        <li><a href="#sessionsAnchor" class="shortCut"> Фотосессии </a></li>
+        <li>
+          <a href="#conditionsAnchor" class="shortCut"> Условия работы </a>
+        </li>
+        <li><a href="#contactsAnchor" class="shortCut"> Контакты </a></li>
+        <li><a href="#reviewsAnchor" class="shortCut"> Отзывы </a></li>
       </ul>
     </header>
 
     <main class="mainContent">
       <!-- TODO come up with a website name or logo -->
-      <!-- 
-          create h1 with name of the site, e.g logo 
-          ** Using more than one <h1> is allowed by the HTML specification, but is not considered a best practice. Using only one <h1> is beneficial for screenreader users. **
-        -->
-      <section class="about " id="aboutAnchor">
-        <div class="test2">
-          <img src="pics/forAbout.png" alt="Девушка с фотоаппаратом" width="360" height="480">
+      <section class="about" id="aboutAnchor">
+        <div>
+          <img
+            src="pics/forAbout.png"
+            alt="Девушка с фотоаппаратом"
+            width="360"
+            height="480"
+          />
         </div>
-        <div class="test">
+        <div>
           <h2>Обо мне</h2>
           <p>
-            Добро пожаловать на сайт профессионального фотографа.
-            Меня зовут Юлия Николаева и я увлекаюсь фотосъемкой с раннего детства.
+            Добро пожаловать на сайт профессионального фотографа. Меня зовут
+            Юлия Николаева и я увлекаюсь фотосъемкой с раннего детства.
           </p>
           <p>
-            Закончила художественную школу и прошла курсы по фотографированию и обработке кадров в Adobe Photoshop.
-            Также закончила курсы по предметной фотоъсемке, портретной и многие другие
+            Закончила художественную школу и прошла курсы по фотографированию и
+            обработке кадров в Adobe Photoshop. Также закончила курсы по
+            предметной фотоъсемке, портретной и многие другие
           </p>
           <p>
-            Благодаря пройденным курсам и моим полученным навыкам,
-            я помогаю своим клиентам раскрыть себя на фотографиях
+            Благодаря пройденным курсам и моим полученным навыкам, я помогаю
+            своим клиентам раскрыть себя на фотографиях
           </p>
           <p>
-            Я стараюсь заботится о том, чтобы мужчине, женщине или ребенку было со мной комфортно работать.
-            С моими работами каждый клиент может ознакомиться ниже в галерее.
+            Я стараюсь заботится о том, чтобы мужчине, женщине или ребенку было
+            со мной комфортно работать. С моими работами каждый клиент может
+            ознакомиться ниже в галерее.
           </p>
         </div>
-
       </section>
-      <section class="sessions " id="sessionsAnchor">
+
+      <section class="gallery" id="galleryAnchor">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="pics\slide1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide7.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide8.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="pics\slide9.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- <section class="sessions " id="sessionsAnchor">
         <div class="studio">
           <h2>Студийная фотосессия</h2>
           <div>
@@ -149,10 +196,6 @@
         </div>
       </section>
 
-      <!-- TODO end gallery https://swiperjs.com/ ++ -->
-      <section class="gallery" id="galleryAnchor">
-
-      </section>
       <section class="conditions ">
         <a name="conditionsAnchor"></a>
         <div>
@@ -186,11 +229,11 @@
       </section>
       <section class="reviews" id="reviewsAnchor">
 
-      </section>
-
+      </section> -->
     </main>
 
     <script src="main.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
   </body>
 </html>
