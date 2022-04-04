@@ -57,7 +57,7 @@ body {
 }
 .navBar,
 .navBar a:hover {
-  color: #a2d14a;
+  color: #426cdffb;
 }
 .navBar a:before,
 .navBar a:after {
@@ -98,6 +98,14 @@ body {
 
 .about {
   padding-top: 150px;
+  justify-content:space-between;
+  margin-left: 20px;
+}
+
+.aboutText {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-right: 150px;
 }
 
 .swiper {
@@ -137,11 +145,7 @@ section {
   padding-top: 80px;
   position: relative;
 }
-.about {
-  /* flex-direction: row; */
-  justify-content:space-between;
-}
 
 p {
-  margin-top: 10px;
+  margin-top: 15px;
 }
