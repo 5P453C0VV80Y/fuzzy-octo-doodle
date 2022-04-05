@@ -97,13 +97,14 @@ body {
 }
 
 .about {
-  margin-top: 100px;
+  padding-top: 100px;
   justify-content:space-between;
   margin-left: 20px;
 }
 
 .aboutText {
   font-size: 30px;
+  padding-top: 130px;
   margin-left: 20px;
   margin-right: 130px;
 }
@@ -142,7 +143,7 @@ body {
 
 section {
   display: flex;
-  margin-top: 100px;
+  padding-top: 100px;
   position: relative;
 }
 
