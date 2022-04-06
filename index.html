@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -16,10 +18,10 @@
     <ul>
       <li><a href="#aboutAnchor" class="shortCut"> Обо мне </a></li>
       <li><a href="#galleryAnchor" class="shortCut"> Галерея </a></li>
-      <li><a href="#sessionsAnchor" class="shortCut"> Фотосессии </a></li>
-      <li><a href="#conditionsAnchor" class="shortCut"> Условия работы </a></li>
+      <li><a href="#serviceAnchor" class="shortCut"> Услуги </a></li>
+      <!-- <li><a href="#conditionsAnchor" class="shortCut"> Условия работы </a></li>
       <li><a href="#contactsAnchor" class="shortCut"> Контакты </a></li>
-      <li><a href="#reviewsAnchor" class="shortCut"> Отзывы </a></li>
+      <li><a href="#reviewsAnchor" class="shortCut"> Отзывы </a></li> -->
     </ul>
   </header>
 
@@ -34,11 +36,6 @@
       </div>
       <div class="aboutText">
         <h2>Обо мне</h2>
-        <!-- <p>
-          Велком ту к нам!
-          Я практикующий фотограф, видеооператор, ретушёр, колорист, приколист,
-          друг голубей.
-        </p> -->
         <p>
           Я фотограф-ретушёр из Красноярска. Специализируюсь на репортажной фотосъемке:
           концерты, спорт, официальные события и любые мероприятия, которые нуждаются в
@@ -97,10 +94,110 @@
             <img src="pics\slide12.png" alt="" />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+
       </div>
     </section>
-    <section class="sessions " id="sessionsAnchor">
+
+    <section class="service" id="serviceAnchor" >
+      <div class="serviceText">
+        <h2 class="serviceH">Репортажная съемка</h2>
+        <p>
+          В репортаже на место приезжаю заранее.
+          Обязательно принимаю к сведению пожелания,
+          чтобы итог соответствовал ожиданиям.
+          В цену входит не только съемка,
+          но и обработка полученного материала.
+        </p>
+        <p>В чем заключаются особенности репортажной съемки:<br>
+          <ul class="abilities">
+          <li>За ограниченное время съемки успеваю охватить каждую эмоцию мероприятия;</li>
+          <li>Четко отображаю происходящее, стараясь запечатлеть всех участников мероприятия;</li>
+          <li>Делаю снимки с разных планов, отслеживая хронологию события.</li>
+          </ul>
+          Ниже можно посмотреть некоторые мои работы
+        </p>
+      </div>
+      
+    </section>
+    
+    <section class="gallery2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="pics\repoSlide1.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\repoSlide2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide3.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide4.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide5.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide6.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide7.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide8.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide9.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="pics\reposlide10.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="priceList">
+      <div class="priceListElem">
+        <p>Съемка длительностью<br>1 час</p>
+        <hr class="line">
+        <p>Стоимость: 1000 Руб.</p> 
+      </div>
+      <div class="priceListElem">
+        <p>Съемка длительностью<br>от 1 до 3 часов</p>
+        <hr class="line">
+        <p>Стоимость: 1500 Руб.</p>
+      </div>
+      <div class="priceListElem">
+        <p>Съемка длительностью<br>более 3 часов</p>
+        <hr class="line">
+        <p>Стоимость: 2500 Руб.</p>
+      </div>
+    </section>
+
+    <section class="footer">
+      asd
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="slider2.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <section class="sessions " id="sessionsAnchor">
       <div class="report">
         <h2 class="sessionsH">Репортажная съемка</h2>
         <div>
@@ -141,9 +238,9 @@
         </div>
        
       </div>
-    </section>
-
-    <section class="conditions ">
+    </section> -->
+    
+    <!-- <section class="conditions ">
         <a name="conditionsAnchor"></a>
         <div>
           <img src="pics/forConditions.png"
@@ -175,18 +272,4 @@
         </p>
       </div>
 
-      </section>
-      <section class="contacts" id="contactsAnchor">
-
-      </section>
-      <section class="reviews" id="reviewsAnchor">
-
-      </section>
-  </main>
-
-  <script src="main.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="slider.js"></script>
-</body>
-
-</html>
+      </section> -->
