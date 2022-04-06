@@ -57,7 +57,7 @@ body {
 }
 .navBar,
 .navBar a:hover {
-  color: #426cdffb;
+  color: #8a1699fb;
 }
 .navBar a:before,
 .navBar a:after {
@@ -200,18 +200,14 @@ section {
 }
 
 .priceList{
-  justify-content:space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-  
+  justify-content:space-around;  
 }
 
 .priceListElem {
   text-align: center;
   font-size: 40px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
+
 .line{
   width:100%;
   background-color: black;
@@ -221,12 +217,39 @@ section {
   }
 
 .footer {
+  color: #fff;
   margin-top: 100px;
+  padding-top: 25px;
   width: 100%;
   height: 250px;
   background-color: black;
-}
+  justify-content: center;
+  text-align: center;
+  }
 
+  .link {
+    font-size: 20px;
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #fffffffb;
+  }
+
+  a:hover {
+    color: #8a1699fb;
+  }
+
+  a:active {
+    color: #6d1d77fb;
+   } 
 
 
 
