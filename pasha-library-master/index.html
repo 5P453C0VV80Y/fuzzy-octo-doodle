@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<link rel="shortcut icon" href="/assets/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/styles/main.scss">
+    <title>Сайт библиотеки</title>
+  </head>
+  <body>
+		<nav class="navigation">
+			<div class="container">
+				<img class="logo" src="./assets/logo.png" alt="">
+				<ul class="navigation_container">
+					<li>
+						<a href="#popular" class="navigation__link">Популярное</a>
+					</li>
+					<li>
+						<a href="#books" class="navigation__link">Книги</a>
+					</li>
+					<li>
+						<a href="#authors" class="navigation__link">Авторы</a>
+					</li>
+					<li>
+						<a href="#publishers" class="navigation__link">Издательства</a>
+					</li>
+					<li>
+						<a href="#about" class="navigation__link">О библиотеке</a>
+					</li>
+					<li>
+						<a href="#contacts" class="navigation__link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<section class="first-screen">
+				<div class="container">
+					<h1>Добро пожаловать <br>на сайт библиотеки</h1>
+					<button class="btn" type="button">Найти свою книгу</button>
+				</div>
+			</section>
+			
+			<section id="books">
+				<div class="container">
+					<h2 class="header">Откройте для себя новую книгу</h2>
+					<div class="books">
+						<img src="./assets/books/kafka.jpg" class="books__item">
+						<img src="./assets/books/kill.jpg" class="books__item">
+						<img src="./assets/books/man.jpg" class="books__item">
+						<img src="./assets/books/nitszhe.jpg" class="books__item">
+						<img src="./assets/books/obuv.jpg" class="books__item">
+						<img src="./assets/books/platon.jpg" class="books__item">
+						<img src="./assets/books/save.jpg" class="books__item">
+						<img src="./assets/books/ссс.jpg" class="books__item">
+					</div>
+				</div>
+			</section>
+
+			<section id="popular" class="accent">
+				<div class="container">
+					<h2 class="header">Самая популярная книга месяца</h2>
+					<div class="popular">
+						<img src="./assets/popular-cover.jpg" class="popular__cover">
+						<div class="popular__content">
+							<div class="popular__authoring">
+								<p class="popular__author">Харуки Мураками</p>
+								<p class="popular__title">Норвежский лес</p>
+							</div>
+							<p class="popular__description">
+								Мир, в который погружает читателей этот замечательный и явно отличный от большинства писатель, я открыла для себя именно с романа "Норвежский лес". Особенно ничем он меня не привлек изначально, он просто был у меня на слуху.
+								Настолько сильно ни одна книга меня еще не цепляла. Краткий пересказ или же краткое описание того, что происходит в книге: студент Японии по имени Ватанабэ влюбляется в девушку по имени Наоко, отношения с которой являются крайне нестабильными и нездоровыми, так как и сама героиня точно не была здорова (хотя бы психически), нашлось место и для поисков себя, целей в жизни. 
+								По ходу романа герой спасает себя от падения (как мне самой показалось). Произведение очень меланхоличное, местами даже вгоняет в хандру и возникает желание замкнуться в себе от непонимания, кто ты и что ты здесь делаешь. 
+								Возможно, такое возникло лишь у меня, я не знаю. По сравнению с другими книгами от этого автора, читается вполне легко и на одном дыхании. То, что произойдет дальше, предугадать невозможно. 
+								В начале романа могло показаться, что финал может быть счастливым, а позже Наоко кончает с собой. На каком-то моменте мне показалось, что Мураками слегка перебрал с самоубийствами: то друг героя, то любовь всей его жизни, однако даже несмотря на это общее впечатление никоим образом не портится. 
+							</p>
+							<button type="button" class="btn">Узнать подробнее</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="authors">
+				<div class="container">
+					<h2 class="header">Самые популярные авторы</h2>
+					<div class="authors">
+						<div class="authors__item">
+							<img src="./assets/steven.jpg" alt="Стивен Кинг" class="authors__image">
+							<p class="authors__name">Стивен Кинг</p>
+						</div>
+						<div class="authors__item">
+							<img src="./assets/brian.jpg" alt="Брайан Джейкс" class="authors__image">
+							<p class="authors__name">Брайан Джейкс</p>
+						</div>
+						<div class="authors__item">
+							<img src="./assets/holly.jpg" alt="Холли Вебб" class="authors__image">
+							<p class="authors__name">Холли Вебб</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--TODO image slider -->
+			<aside class="swiper" id="publishers-slider">
+				<div class="swiper-wrapper">
+					<img class="swiper-slide" src="./assets/asd.jpg">
+					<img class="swiper-slide" src="./assets/ad.jpg">
+					<img class="swiper-slide" src="./assets/hadn.jpg">
+					<img class="swiper-slide" src="./assets/book.jpg">
+					<img class="swiper-slide" src="./assets/g.jpg">
+					<img class="swiper-slide" src="./assets/ad.jpg">
+				</div>
+			</aside>
+
+			<section id="publishers">
+				<div class="container">
+					<h2 class="header">Редакции и издательства</h2>
+					<div class="publisher">
+						<img src="./assets/logos/act.png" class="publisher__item">
+						<img src="./assets/logos/bombora.png" class="publisher__item">
+						<img src="./assets/logos/corpvs.png" class="publisher__item">
+						<img src="./assets/logos/fanzpn.png" class="publisher__item">
+						<img src="./assets/logos/komil.png" class="publisher__item">
+						<img src="./assets/logos/mann.png" class="publisher__item">
+						<img src="./assets/logos/mesh.png" class="publisher__item">
+						<img src="./assets/logos/shubina.png" class="publisher__item">
+						<img src="./assets/logos/villi.png" class="publisher__item">
+						<img src="./assets/logos/eksmo.png" class="publisher__item">
+					</div>
+				</div>
+			</section>
+
+			<section class="accent" id="about">
+				<div class="container">
+					<h2 class="header">Приходите к нам в библиотеку</h2>
+					<p class="description-about">Наша миссия - воспитывать всеобщую страсть к чтению, сотрудничая с авторами, чтобы помогать создавать истории и передавать идеи, которые информируют, развлекают и вдохновляют, а также соединяют их с читателями повсюду. Мы являемся международным домом для почти 400 независимых редакционных и творческих изданий.</p>
+					<p class="description-about">Используя наш глобальный охват, внедряя новые технологии и сотрудничая с авторами на всех этапах процесса публикации, от дизайна и редактирования до продаж и маркетинга, производства и распространения, мы хотим предоставить им максимально возможную платформу.</p>
+					<p class="description-about">В то же время мы яростно защищаем интеллектуальную собственность наших авторов и выступаем за свободу выражения мнений, гарантируя, что их голоса будут слышны за пределами страницы в обществах и сообществах по всему миру.​​​​​​​ Наша профессиональная команда профессионалов в области публикаций стремится помочь авторам реализовывать свои лучшие работы и находить новые инновационные способы донести истории и идеи до мировой аудитории.</p>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="container">
+					<h2 class="header">Вы можете воспользоваться услугами</h2>
+					<div class="services">
+						<div class="services__item">
+							<img src="./assets/1.svg" alt="" class="services__icon">
+							<p class="services__title">Распечатка документов</p>
+							<p class="services__desc">
+								- на принтере или запись информации<br>
+								- распечатка текста (ч/б или цветная)<br>
+								- распечатка изображения<br>
+								- запись информации на носитель
+							</p>
+						</div>
+						<div class="services__item">
+							<img src="./assets/2.svg" alt="" class="services__icon">
+							<p class="services__title">Сервисные услуги</p>
+							<p class="services__desc">- предоставление машинного времени для самостоятельной работы<br> - услуги электронной почты<br> - пересылка информации</p>
+						</div>
+						<div class="services__item">
+							<img src="./assets/3.svg" alt="" class="services__icon">
+							<p class="services__title">Услуги МБА</p>
+							<p class="services__desc">- доставка документов в оригиналах и копиях по запросам пользователей из фондов других библиотек<br>- электронная доставка документов</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="contacts" class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.7925407126785!2d92.94403783503398!3d56.00155215117531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7aff7451d05f3%3A0xafcf2f18492205f2!2sZapadnaya%20Ulitsa%2C%2014%2C%20Krasnoyarsk%2C%20Krasnoyarskiy%20kray%2C%20Russia%2C%20660059!5e0!3m2!1sen!2skz!4v1654453606474!5m2!1sen!2skz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="footer__contacts">
+						<p>Чебоксары, школьный проезд 1.</p>
+						<a href="tel:+88003000600">Телефон: 8 800 300 06 00 отдела продаж</a>
+						<a href="tel:+88003000600">Телефон: 8 800 340 06 00 отдела сбыта</a>
+						<a href="mailto:test@yandex.ru">E-mail: test@yandex.ru</a>
+						<p><strong>Контактное лицо: </strong>Калашников Павел</p>
+					</div>
+				</div>
+				<div class="footer__btm">
+					<div class="footer__left">
+						<p class="inn">
+							ООО «СтройТрейд», 123456, г.Москва, ул. Центральная 1, офис 1 <br>
+							ИНН 1234567890 ОГРН 123456789012
+						</p>
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+					<div class="footer__right">
+						<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z"></path></svg>
+						<p class="number">8 800 333 22 33</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal">
+			<div class="backdrop"></div>
+			<div class="modal__content">
+				<p class="modal__title">Заполните форму</p>
+				<p class="modal__desc">
+					Оставьте вашу заявку и мы перезвоним вам в ближайшее время
+				</p>
+				<form action="">
+					<label for="name-field">
+						Ваше имя
+						<input 
+							id="name-field"
+							class="modal__input"
+							type="text" 
+							placeholder="Duke Nukem"
+							required 
+							name="name" 
+						>
+					</label>
+					<label for="number-field">
+						Номер телефона
+						<input 
+							id="number-field"
+							class="modal__input"
+							name="phone" 
+							placeholder="123-4567-8901"
+							type="tel" required 
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+						>
+					</label>
+					<label for="email-field">
+						Email
+						<input 
+						class="modal__input" 
+						type="email" 
+						required 
+						placeholder="feedback@gmail.com"
+						name="mail"
+						id="email-field"
+						>
+					</label>
+					<button type="submit" class="btn_modal">Отправить заявку</button>
+				</form>
+			</div>
+		</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

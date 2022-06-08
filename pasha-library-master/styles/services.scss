@@ -1,0 +1,23 @@
+.services {
+	display: flex; justify-content: space-between; align-items: center;
+	
+	&__item {
+		width: calc(33.33% - 20px);
+		text-align: center;
+		font-size: 18px;
+	}
+
+	&__title {
+		margin: 10px 0;
+		font-weight: 500;
+		font-size: 22px;
+	}
+
+	&__desc {
+		color: #3a3a3a;
+	}
+
+	&__icon {
+		width: 128px; height: 128px;
+	}
+}
