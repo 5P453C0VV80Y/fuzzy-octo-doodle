@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.navBar {
+  width: 100%;
+  list-style: none;
+  margin: 0px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.navBar li {
+  display: inline-block;
+}
+/* ПЕРЕГОРОДКИ МЕЖДУ ЭЛЕМЕНТАМИ ШАПКИ */
+/* .navBar li:after {
+  content: "|";
+  color: #ada1a1;
+  display: inline-block;
+  vertical-align: top;
+} */
+.navBar li:last-child:after {
+  content: none;
+}
+.navBar a {
+  text-decoration: none;
+  /*font-family: "Ubuntu Condensed", sans-serif;  try not to use uneeded fonts, create a general class which elements should use the font */
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 25px 0 25px;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.navBar a,
+.navBar a:visited {
+  color: #9d999d;
+}
+.navBar,
+.navBar a:hover {
+  color: #8a1699fb;
+}
+.navBar a:before,
+.navBar a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #853499;
+  transition: 0.8s;
+}
+/* .navBar a:hover:before, .navBar .current:before {left: 0;} */
+/* .navBar a:hover:after, .navBar .current:after {right: 0;}    */
+@media (max-width: 550px) {
+  .navBar {
+    padding-top: 0;
+  }
+  .navBar li {
+    display: block;
+  }
+  .navBar li:after {
+    content: none;
+  }
+  .navBar a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.about {
+  padding-top: 100px;
+  margin-left: 20px;
+}
+
+.aboutText {
+  font-size: 30px;
+  padding-top: 130px;
+  margin-left: 20px;
+  margin-right: 130px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  display: flex;
+  padding-top: 100px;
+  position: relative;
+}
+
+.service{
+  justify-content:space-between;
+  margin-left: 20px;
+}
+
+.serviceH{
+  text-align: center;
+}
+
+.serviceText {
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 130px;
+}
+
+.abilities{
+  margin-left: 25px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.priceList{
+  justify-content:space-around;  
+}
+
+.priceListElem {
+  text-align: center;
+  font-size: 40px;
+}
+
+.line{
+  width:100%;
+  background-color: black;
+  border:none!important;
+  border-radius:2px;
+  height:5px;
+  }
+
+.footer {
+  color: #fff;
+  margin-top: 100px;
+  padding-top: 25px;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .link {
+    font-size: 20px;
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #fffffffb;
+  }
+
+  a:hover {
+    color: #8a1699fb;
+  }
+
+  a:active {
+    color: #6d1d77fb;
+  }
+
+  .modal {
+    z-index: 99999999;
+    position: fixed;
+    top: 0; left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+    .modal__title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .modal__desc {
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: 35px;
+  
+    }
+  
+    .modal__content {
+      color: #374151;
+      z-index: 123;
+      width: 360px;
+      background: white;
+      border-radius: 5px;
+      padding: 40px 30px;
+  
+      animation: moveModal .5s ease-in-out;
+    }
+    
+    .btn_modal {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    label {
+      font-size: 16px;
+    }
+
+    .modal__input {
+      color: #212529;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 25px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+      font-weight: 300;
+      outline: none;
+    }
+  
+  
+    .active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  
+  .backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .btn_modal {
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: #9d999d;
+    padding: 10px 60px;
+    border: none;
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: #9d999d;
+    padding: 10px 60px;
+    border: none;
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #562961;
+  }
+  
+  
+  
+
+
+  @keyframes moveModal {
+    0% { transform: translateY(-200%); }
+    100% { transform: translateY(0); }
+  }
