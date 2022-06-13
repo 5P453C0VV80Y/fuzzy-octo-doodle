@@ -2,6 +2,10 @@ const swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -109,55 +113,6 @@ allBtns.map(btn => btn.addEventListener('click', () => modalToggler()));
             isFrame = true;
         }
     
-        /**
-         * Safari 10 fixed it, Chrome fixed it in v45:
-         * This fixes a bug where the areas left and right to 
-         * the content does not trigger the onmousewheel event
-         * on some pages. e.g.: html, body { height: 100% }
-         */
-        else if (isOldSafari &&
-                 scrollHeight > windowHeight &&
-                (body.offsetHeight <= windowHeight || 
-                 html.offsetHeight <= windowHeight)) {
-    
-            var fullPageElem = document.createElement('div');
-            fullPageElem.style.cssText = 'position:absolute; z-index:-10000; ' +
-                                         'top:0; left:0; right:0; height:' + 
-                                          root.scrollHeight + 'px';
-            document.body.appendChild(fullPageElem);
-            
-            // DOM changed (throttled) to fix height
-            var pendingRefresh;
-            refreshSize = function () {
-                if (pendingRefresh) return; // could also be: clearTimeout(pendingRefresh);
-                pendingRefresh = setTimeout(function () {
-                    if (isExcluded) return; // could be running after cleanup
-                    fullPageElem.style.height = '0';
-                    fullPageElem.style.height = root.scrollHeight + 'px';
-                    pendingRefresh = null;
-                }, 500); // act rarely to stay fast
-            };
-      
-            setTimeout(refreshSize, 10);
-    
-            addEvent('resize', refreshSize);
-    
-            var config = {
-                attributes: true, 
-                childList: true, 
-                characterData: false 
-                // subtree: true
-            };
-    
-            observer = new MutationObserver(refreshSize);
-            observer.observe(body, config);
-    
-            if (root.offsetHeight <= windowHeight) {
-                var clearfix = document.createElement('div');   
-                clearfix.style.clear = 'both';
-                body.appendChild(clearfix);
-            }
-        }
     
         // disable fixed background
         if (!options.fixedBackground && !isExcluded) {
